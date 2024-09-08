@@ -57,3 +57,99 @@ aside li {
     gap: 23px;
     margin-bottom: 2rem;
 }
+
+/* Head Section */
+
+.header-container {
+    margin: 0 6rem 0 2rem;
+}
+
+.header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.icon-alternate {
+    fill: #000;
+}
+
+input {
+    border: 0;
+    background: #E2E8F0;
+    width: 700px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.bell {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.bell img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.bell span {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-btns div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-btns img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.intro p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.intro p:first-child {
+    font-size: 1.8rem;
+}
+
+.intro p:last-child {
+    font-size: 2.9rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    align-self: center;
+}
+
+.btn button {
+    padding: 1.3rem 4.5rem;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 30px;
+    background: #1992D4;
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 4rem;
+}
+
+.btn button:last-child {
+    margin-right: 0;
+}
