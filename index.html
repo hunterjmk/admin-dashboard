@@ -7,8 +7,111 @@
 
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Admin Dashboard</h1>
+    <div class="full-container">
+        <aside>
+            <div class="aside-container">
+                <h2><svg class="icon">
+                        <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#view-dashboard"></use>
+                    </svg>Dashboard</h2>
+                <ul>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#home"></use>
+                        </svg>
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#card-account-details-outline"></use>
+                        </svg>
+                        <span>Profile</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#message-reply"></use>
+                        </svg>
+                        <span>Messages</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#clock-time-three"></use>
+                        </svg>
+                        <span>History</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#file-multiple"></use>
+                        </svg>
+                        <span>Tasks</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#account-group"></use>
+                        </svg>
+                        <span>Communities</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#cog"></use>
+                        </svg>
+                        <span>Settings</span>
+                    </li>
+                    <li>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>help-box</title>
+                            <path
+                                d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" />
+                        </svg>
+                        <span>Support</span>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#shield-check"></use>
+                        </svg>
+                        <span>Privacy</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="header-container">
+        <section class="header">
+            <div class="search">
+                <svg class="icon icon-alternate">
+                    <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#magnify"></use>
+                </svg>
+                <input type="text" name="search">
+            </div>
+            <div class="bell">
+                <svg class="icon icon-alternate">
+                    <use xlink:href="/admin-dashboard/Resources/Icons/sprite.svg#bell-ring-outline"></use>
+                </svg>
+                <span><img src="/admin-dashboard/Resources/Images/gura.png" alt="Account Image"></span>
+                <span>Mesa Khatibu</span>
+            </div>
+        </section>
+        <section class="header-btns">
+            <div>
+                <span><img src="/admin-dashboard/Resources/Images/gura.png" alt="Account Image"></span>
+                <div class="intro">
+                    <p>Hi there,</p>
+                    <p>Mesa Khatibu (@mesak)</p>
+                </div>
+            </div>
+            <div class="btn">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </section>
+    </div>
+    </div>
 </body>
 </html>

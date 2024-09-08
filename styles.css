@@ -6,8 +6,54 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-    color: red;
+/* SideBar */
+
+aside {
+    background: #1992D4;
+    color: #fff;
+    font-size: 20px;
+}
+
+.aside-container {
+    margin-left: 2.5rem;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+}
+
+aside h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+h2>.icon {
+    width: 60px;
+    height: 60px;
+}
+
+ul {
+    list-style: none;
+    font-weight: 500;
+    margin-left: 1.25rem;
+    margin-bottom: 5rem;
+    padding: 0;
+}
+
+aside li {
+    font-size: 3rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 23px;
+    margin-bottom: 2rem;
 }
