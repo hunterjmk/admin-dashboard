@@ -9,6 +9,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /* SideBar */
 
 aside {
@@ -93,7 +97,7 @@ input {
     gap: 4rem;
 }
 
-.bell img {
+.img-profile {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -109,7 +113,8 @@ input {
     justify-content: space-between;
 }
 
-.header-btns div:first-child {
+.header-btns div:first-child,
+.tre-media {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -152,4 +157,133 @@ input {
 
 .btn button:last-child {
     margin-right: 0;
+}
+
+/* Cards */
+
+.main {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    background: #E2E8F0;
+    display: grid;
+    grid-template-areas: 'A B' 'A C';
+    grid-template-columns: 3fr / 1fr;
+}
+
+.main h2 {
+    font-size: 2rem;
+}
+
+.main h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+.main p {
+    color: #777777;
+}
+
+.main .radius {
+    background: #fff;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.projects {
+    grid-area: A;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-areas: 'A B' 'A D';
+    gap: 2rem;
+    grid-template-columns: 1fr 50fr;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.strip {
+    background: #DEAD3D;
+    grid-area: A;
+    width: 10px;
+}
+
+.content {
+    grid-area: B;
+}
+
+.content h3 {
+    margin-top: 4rem;
+}
+
+.content p {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: right;
+    gap: 3.4rem;
+    grid-area: D;
+    margin: 3rem;
+}
+
+.card-icon>svg {
+    width: 30px;
+    height: 30px;
+}
+
+.ann-container {
+    background: #fff;
+    padding: 3rem 4.5rem;
+    width: 40rem;
+}
+
+.announcements,
+.trending {
+    margin-left: 1rems;
+}
+
+.announcements {
+    margin-bottom: 6rem;
+}
+
+.announcements h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.announcements p {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.announcements hr {
+    color: #777777;
+    margin: 2.5rem 0;
+}
+
+.tre-media {
+    margin-bottom: 2rem;
+}
+
+.tre-content {
+    font-size: 1.8rem;
+}
+
+.tre-content p {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.tre-content p:first-child {
+    color: #000;
 }
