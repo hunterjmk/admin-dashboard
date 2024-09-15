@@ -2,9 +2,13 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
-html {
+html,
+body {
+    margin: 0;
+    padding: 0;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,9 +17,17 @@ p {
     line-height: 1.5;
 }
 
+.full-container {
+    display: grid;
+    grid-template-areas: 'A B' 'A C';
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
 /* SideBar */
 
 aside {
+    grid-area: A;
     background: #1992D4;
     color: #fff;
     font-size: 20px;
@@ -26,8 +38,8 @@ aside {
 }
 
 .icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     fill: #fff;
 }
 
@@ -41,9 +53,9 @@ aside h2 {
 }
 
 
-h2>.icon {
-    width: 60px;
-    height: 60px;
+h2 > .icon {
+    width: 50px;
+    height: 50px;
 }
 
 ul {
@@ -55,7 +67,7 @@ ul {
 }
 
 aside li {
-    font-size: 3rem;
+    font-size: 2.2rem;
     display: flex;
     align-items: flex-end;
     gap: 23px;
@@ -65,7 +77,8 @@ aside li {
 /* Head Section */
 
 .header-container {
-    margin: 0 6rem 0 2rem;
+    grid-area: B;
+    margin: 0 3rem 0 2rem;
 }
 
 .header {
@@ -98,8 +111,8 @@ input {
 }
 
 .img-profile {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -162,6 +175,7 @@ input {
 /* Cards */
 
 .main {
+    grid-area: C;
     padding-top: 2rem;
     padding-bottom: 6rem;
     background: #E2E8F0;
